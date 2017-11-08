@@ -56,6 +56,10 @@ namespace WebAppPB_Lab2_2017_2.Models
             modelBuilder.Properties<DateTime>()
                 .Configure(prop => prop.HasColumnType("datetime2"));
 
+            // Adicionando comando CUD (Create/Update/Delete)
+            modelBuilder.Types()
+                .Configure(t => t.MapToStoredProcedures());
+
         }
     }
 }
