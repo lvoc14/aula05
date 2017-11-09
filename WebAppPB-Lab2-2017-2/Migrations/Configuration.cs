@@ -95,6 +95,26 @@ namespace WebAppPB_Lab2_2017_2.Migrations
             };
             contexto.Ators.AddRange(atores);
 
+            var sessoes = new List<Sessao>
+            {
+                new Sessao
+                {
+                   Sala = salas[1],
+                   Ingresso = ingressos[0],
+                   Filme = filmes[1],
+                   Encerrada = false,
+                   ValorInteira = 50,
+                   ValorMeia = 25,
+                   DataHoraInicio = DateTime.Now,
+                   DataHoraFim = DateTime.Now
+                },
+               new Sessao
+                {
+                   Sala = salas[0]
+                }
+            };
+            contexto.Ators.AddRange(atores);
+
         }
     }
 }
