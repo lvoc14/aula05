@@ -94,7 +94,7 @@ namespace WebAppPB_Lab2_2017_2.Migrations
                     Nome = "Antonio Bandeiras",
                     Filmes = new List<Filme>{ filmes[0]}
                 },
-            };
+            }; 
             contexto.Ators.AddRange(atores);
 
             var sessoes = new List<Sessao>
