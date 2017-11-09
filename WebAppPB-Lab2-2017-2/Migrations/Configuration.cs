@@ -49,8 +49,52 @@ namespace WebAppPB_Lab2_2017_2.Migrations
                     Numero = 20
                 }
             };
-
+                      
             contexto.Salas.AddRange(salas);
+
+            var ingressos = new List<Ingresso>
+            {
+                new Ingresso
+                {
+                     Tipo = TipoIngresso.Inteira
+                },
+                new Ingresso
+                {
+                    Tipo = TipoIngresso.Meia
+                },
+            };
+
+            contexto.Ingressoes.AddRange(ingressos);
+
+            var filmes = new List<Filme>
+            {
+                new Filme
+                {
+                    Titulo = "Senhor dos Anéis",
+                    Duracao = 1
+                },
+
+                new Filme
+                {
+                    Titulo = "Titanic",
+                    Duracao = 2
+                },
+            };
+            contexto.Filmes.AddRange(filmes);
+
+            var atores = new List<Ator>
+            {
+                new Ator
+                {
+                    Nome = " Angelina Jolie"
+                },
+                new Ator
+                {
+                    Nome = "Antonio Bandeiras"
+                },
+            };
+            contexto.Ators.AddRange(atores);
+
         }
     }
 }
