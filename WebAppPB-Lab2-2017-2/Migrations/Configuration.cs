@@ -86,11 +86,13 @@ namespace WebAppPB_Lab2_2017_2.Migrations
             {
                 new Ator
                 {
-                    Nome = " Angelina Jolie"
+                    Nome = " Angelina Jolie",
+                    Filmes = new List<Filme>{ filmes[0], filmes[1]}
                 },
                 new Ator
                 {
-                    Nome = "Antonio Bandeiras"
+                    Nome = "Antonio Bandeiras",
+                    Filmes = new List<Filme>{ filmes[0]}
                 },
             };
             contexto.Ators.AddRange(atores);
